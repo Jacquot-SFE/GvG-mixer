@@ -220,6 +220,7 @@
 <wire x1="8" y1="9" x2="18" y2="9" width="0.127" layer="21"/>
 <wire x1="18" y1="9" x2="18" y2="-9" width="0.127" layer="21"/>
 <wire x1="18" y1="-9" x2="8" y2="-9" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="9.525" width="0.127" layer="21"/>
 </package>
 <package name="DIP08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -576,24 +577,25 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OPAMP" prefix="U">
+<deviceset name="OPAMP" prefix="U" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="OP-AMP" x="0" y="0"/>
-<gate name="G$2" symbol="POWER_CONSORT" x="20.32" y="0" addlevel="always"/>
+<gate name=".1" symbol="OP-AMP" x="0" y="0"/>
+<gate name=".P" symbol="POWER_CONSORT" x="20.32" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="LME49710" package="DIP08-KIT">
 <connects>
-<connect gate="G$1" pin="+IN" pad="3"/>
-<connect gate="G$1" pin="-IN" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="6"/>
-<connect gate="G$2" pin="P$V+" pad="7"/>
-<connect gate="G$2" pin="P$V-" pad="4"/>
+<connect gate=".1" pin="+IN" pad="3"/>
+<connect gate=".1" pin="-IN" pad="2"/>
+<connect gate=".1" pin="OUT" pad="6"/>
+<connect gate=".P" pin="P$V+" pad="7"/>
+<connect gate=".P" pin="P$V-" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="MFR" value="lme49710" constant="no"/>
 <attribute name="MOUSER" value="926-LME49710NA/NOPB" constant="no"/>
+<attribute name="VALUE" value="lme49710" constant="no"/>
 </technology>
 </technologies>
 </device>
