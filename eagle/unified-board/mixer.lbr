@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -281,7 +281,7 @@
 <text x="-2.54" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SM-RECTIFIER">
-<circle x="0" y="0" radius="4.572" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4.572" width="0.254" layer="21"/>
 <pad name="POS" x="0" y="-2.794" drill="1.016" shape="square"/>
 <pad name="AC1" x="-2.794" y="0" drill="1.016"/>
 <pad name="AC2" x="2.794" y="0" drill="1.016"/>
@@ -291,9 +291,9 @@
 <wire x1="0" y1="-4.445" x2="-0.635" y2="-4.445" width="0.127" layer="21"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-4.445" width="0.127" layer="21"/>
 <wire x1="0" y1="3.81" x2="0" y2="4.445" width="0.127" layer="21"/>
-<text x="-2.54" y="-0.635" size="1.27" layer="21" rot="R90">~</text>
-<text x="5.08" y="-0.635" size="1.27" layer="21" rot="R90">~</text>
-<text x="-2.54" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-0.635" size="1.27" layer="21" font="vector" rot="R90">~</text>
+<text x="5.08" y="-0.635" size="1.27" layer="21" font="vector" rot="R90">~</text>
+<text x="-2.54" y="0.635" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="BEAD">
 <wire x1="-2.25" y1="1.75" x2="2.25" y2="1.75" width="0.127" layer="21"/>
@@ -305,6 +305,49 @@
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2" y="-1" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="CAP-PANA-5LS-6DIAM">
+<circle x="0" y="0" radius="3.15" width="0.254" layer="21"/>
+<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
+<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
+<text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0.5" y="-3" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="0.5" y="-3" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+</package>
+<package name="CAP-PANA-5LS-5DIAM">
+<circle x="0" y="0" radius="3.15" width="0.254" layer="21"/>
+<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
+<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
+<text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0.5" y="-3" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="0.5" y="-3" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+</package>
+<package name="CAP-PANA-5LS-12.5DIAM">
+<circle x="0" y="0" radius="6.25" width="0.254" layer="21"/>
+<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
+<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
+<text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0.5" y="-3" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<text x="0.5" y="-3" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+</package>
+<package name="CAP-KEMET-GM-2.54LS">
+<pad name="P$1" x="-1.27" y="0" drill="0.8128" diameter="1.6256"/>
+<pad name="P$2" x="1.27" y="0" drill="0.8128" diameter="1.6256"/>
+<text x="-1.905" y="-1.27" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<text x="-1.905" y="0.635" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-0.508" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.508" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="-0.508" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="0.508" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.508" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -504,6 +547,18 @@
 <wire x1="0.889" y1="2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="1.143" y1="2.54" x2="1.143" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="5LN01SP" prefix="Q" uservalue="yes">
@@ -678,6 +733,104 @@
 <technology name="">
 <attribute name="MOUSER" value="623-2743002112LF" constant="no"/>
 <attribute name="VALUE" value="FB" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP-LYTIC" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="47U/63V" package="CAP-PANA-5LS-6DIAM">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="667-EEU-FR1J470B" constant="no"/>
+<attribute name="VALUE" value="47u/63V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="47U/25V" package="CAP-PANA-5LS-5DIAM">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="667-EEU-FR1E470B" constant="no"/>
+<attribute name="VALUE" value="47u/25V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="6800U/10V" package="CAP-PANA-5LS-12.5DIAM">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="667-EEU-FR1A682L" constant="no"/>
+<attribute name="VALUE" value="6800u/25V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1000U/35V" package="CAP-PANA-5LS-12.5DIAM">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="667-EEU-FR1V102" constant="no"/>
+<attribute name="VALUE" value="1000u/35V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP-CERAMIC" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="100PF" package="CAP-KEMET-GM-2.54LS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-C315C101J5G" constant="no"/>
+<attribute name="VALUE" value="100pf" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="47PF" package="CAP-KEMET-GM-2.54LS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-C315C470J5G" constant="no"/>
+<attribute name="VALUE" value="47pf" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="470PF" package="CAP-KEMET-GM-2.54LS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="80-C315C471J1G" constant="no"/>
+<attribute name="VALUE" value="470pf" constant="no"/>
 </technology>
 </technologies>
 </device>
