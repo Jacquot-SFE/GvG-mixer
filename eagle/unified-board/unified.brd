@@ -176,24 +176,6 @@
 <text x="25.4" y="99.06" size="6.4516" layer="21" font="vector" ratio="15" rot="R180">M2</text>
 </plain>
 <libraries>
-<library name="SparkFun-Capacitors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CAP-PTH-SMALL">
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.7" diameter="1.651"/>
-<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651"/>
-<text x="0.508" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="0.254" y="-1.524" size="0.4064" layer="27">&gt;Value</text>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Resistors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
@@ -1155,7 +1137,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="FB601" library="mixer" package="BEAD" value="FB" x="12.7" y="36.83" rot="R270">
 <attribute name="MOUSER" value="623-2743002112LF" x="12.7" y="36.83" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
-<element name="C603" library="SparkFun-Capacitors" package="CAP-PTH-SMALL" value="100pf" x="6.35" y="44.45" rot="R270"/>
+<element name="C603" library="mixer" package="CAP-KEMET-GM-2.54LS" value="100pf" x="6.35" y="44.45" rot="R270">
+<attribute name="MOUSER" value="80-C315C101J5G" x="6.35" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="100pf" x="6.35" y="44.45" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="D602" library="mixer" package="SM-RECTIFIER" value="RECTIFIERRB15X" x="20.32" y="35.56">
 <attribute name="MOUSER" value="583-RB153" x="20.32" y="35.56" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
@@ -1256,7 +1241,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="C605" pad="P$2"/>
 <contactref element="C604" pad="NEG"/>
 <contactref element="C606" pad="POS"/>
-<contactref element="C603" pad="2"/>
+<contactref element="C603" pad="P$2"/>
 <contactref element="U601" pad="2"/>
 <contactref element="R602" pad="P$2"/>
 <contactref element="R610" pad="P$2"/>
@@ -1560,10 +1545,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </signal>
 <signal name="N$7">
 <contactref element="J601" pad="1"/>
-<contactref element="C603" pad="1"/>
+<contactref element="C603" pad="P$1"/>
 <contactref element="FB601" pad="P$2"/>
-<wire x1="6.35" y1="44.45" x2="12.7" y2="39.83" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="44.577" x2="6.35" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="45.72" x2="12.7" y2="39.83" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="44.577" x2="6.35" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="C602" pad="NEG"/>
