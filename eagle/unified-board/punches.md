@@ -1,11 +1,12 @@
 # Mixer board punchlist
+...
 
-* Source and create actual lytic caps.
-* same for lil ceramics.
-* a zillion standoffs
+  * Source and create actual lytic caps.
+  * same for lil ceramics.
+  * a zillion standoffs
 * solid power input
-* big power caps & tiny R's
-* molex or screwterm for power in?
+  * big power caps & tiny R's
+  * molex or screwterm for power in?
 * track down combo connnectors
 * all panel components on REVERSE!
 
@@ -18,3 +19,6 @@
 * input jacks
 * output jacks
 * knobs
+* transformers
+* foh kill
+* send 1 monitors send 2 switch...
