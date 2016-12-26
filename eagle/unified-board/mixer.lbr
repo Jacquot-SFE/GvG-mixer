@@ -168,40 +168,44 @@
 <text x="3.175" y="-1.905" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="DIP08-KIT">
-<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="4" x="3.81" y="-4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="5" x="3.81" y="4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="6" x="1.27" y="4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="7" x="-1.27" y="4.191" drill="0.8128" diameter="1.6256" stop="no"/>
+<pad name="8" x="-3.81" y="4.191" drill="0.8128" diameter="1.6256" stop="no"/>
 <wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
-<circle x="-3.81" y="-1.905" radius="0.508" width="0.254" layer="21"/>
-<pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="4" x="3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="5" x="3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="6" x="1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="7" x="-1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="8" x="-3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="-5.715" y="-3.81" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<circle x="-3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<text x="-3.175" y="-0.635" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">&gt;VALUE</text>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.016" x2="-5.08" y2="1.016" width="0.2032" layer="21" curve="180"/>
+<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
+<circle x="-3.81" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="6.35" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<circle x="-1.27" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-1.27" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="1.27" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="1.27" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="3.81" y="4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="3.81" y="4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-3.81" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-3.81" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="-1.27" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="-1.27" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="1.27" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="1.27" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<circle x="3.81" y="-4.191" radius="1.0668" width="0" layer="30"/>
+<circle x="3.81" y="-4.191" radius="0.4318" width="0" layer="29"/>
+<polygon width="0.127" layer="21">
+<vertex x="-6.19125" y="-3.4925" curve="-90"/>
+<vertex x="-5.715" y="-3.01625" curve="-90"/>
+<vertex x="-5.23875" y="-3.4925" curve="-90"/>
+<vertex x="-5.715" y="-3.96875" curve="-90"/>
+</polygon>
 </package>
 <package name="ALPHA-RV24AF40-POT">
 <pad name="CW" x="17.0385875" y="7.945221875" drill="2.1"/>
@@ -250,10 +254,10 @@
 <package name="WIMA-MKS2-2.5X7.2">
 <pad name="P$1" x="2.5" y="0" drill="0.75"/>
 <pad name="P$2" x="-2.5" y="0" drill="0.75"/>
-<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.127" layer="21"/>
-<wire x1="3.6" y1="-1.25" x2="-3.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="3.6" y1="1.25" x2="3.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="-1.25" x2="-3.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="1.25" x2="3.6" y2="-1.25" width="0.2032" layer="21"/>
 <text x="-3.1" y="1.4" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.032" y="-1.016" size="0.8128" layer="27">&gt;VALUE</text>
 <text x="-2.024" y="-1.016" size="0.8128" layer="21">&gt;VALUE</text>
@@ -889,6 +893,58 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM358" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;LM358&lt;/h3&gt;
+&lt;p&gt;Jellybean op-amp&lt;p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/LM358.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9456"&gt;Op-Amp (Thru-Hole) - LM358&lt;/a&gt; (COM-09456)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G1" symbol="OP-AMP" x="-10.16" y="0"/>
+<gate name="G2" symbol="OP-AMP" x="10.16" y="0"/>
+<gate name="G3" symbol="POWER_CONSORT" x="25.4" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP08">
+<connects>
+<connect gate="G1" pin="+IN" pad="3"/>
+<connect gate="G1" pin="-IN" pad="2"/>
+<connect gate="G1" pin="OUT" pad="1"/>
+<connect gate="G2" pin="+IN" pad="5"/>
+<connect gate="G2" pin="-IN" pad="6"/>
+<connect gate="G2" pin="OUT" pad="7"/>
+<connect gate="G3" pin="P$V+" pad="8"/>
+<connect gate="G3" pin="P$V-" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09172" constant="no"/>
+<attribute name="VALUE" value="LM358" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="DIP08-KIT">
+<connects>
+<connect gate="G1" pin="+IN" pad="3"/>
+<connect gate="G1" pin="-IN" pad="2"/>
+<connect gate="G1" pin="OUT" pad="1"/>
+<connect gate="G2" pin="+IN" pad="5"/>
+<connect gate="G2" pin="-IN" pad="6"/>
+<connect gate="G2" pin="OUT" pad="7"/>
+<connect gate="G3" pin="P$V+" pad="8"/>
+<connect gate="G3" pin="P$V-" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09172" constant="no"/>
+<attribute name="VALUE" value="LM358" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
