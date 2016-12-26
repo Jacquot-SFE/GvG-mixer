@@ -441,62 +441,6 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="10KOHM-1/4W-1%(PTH)" prefix="R" uservalue="yes">
-<description>RES-12183</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="HORIZ" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="HORIZ-KIT" package="AXIAL-0.3EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="VERT" package="AXIAL-0.1">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="VERT-KIT" package="AXIAL-0.1EZ">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12183" constant="no"/>
-<attribute name="VALUE" value="10k" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>&lt;b&gt;Resistor&lt;/b&gt;
 Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
@@ -4565,6 +4509,14 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="-4.445" y1="0" x2="4.445" y2="0" width="0.127" layer="21"/>
 <text x="-2.54" y="8.89" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-15.875" y="9.525" radius="2.794" width="0.127" layer="39"/>
+<circle x="-15.875" y="9.525" radius="2.794" width="0.127" layer="40"/>
+<circle x="-15.875" y="-9.525" radius="2.794" width="0.127" layer="40"/>
+<circle x="15.875" y="-9.525" radius="2.794" width="0.127" layer="40"/>
+<circle x="15.875" y="9.525" radius="2.794" width="0.127" layer="40"/>
+<circle x="15.875" y="9.525" radius="2.794" width="0.127" layer="39"/>
+<circle x="-15.875" y="-9.525" radius="2.794" width="0.127" layer="39"/>
+<circle x="15.875" y="-9.525" radius="2.794" width="0.127" layer="39"/>
 </package>
 <package name="SM-RECTIFIER">
 <circle x="0" y="0" radius="4.572" width="0.254" layer="21"/>
@@ -4634,6 +4586,23 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="0.254" y1="-0.508" x2="0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="0.254" y1="0" x2="0.254" y2="0.508" width="0.127" layer="21"/>
 <wire x1="0.254" y1="0" x2="0.508" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="AXIAL-0.3">
+<description>&lt;h3&gt;AXIAL-0.3&lt;/h3&gt;
+&lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;/p&gt;</description>
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="0.8128" diameter="1.6256"/>
+<pad name="P$2" x="3.81" y="0" drill="0.8128" diameter="1.6256"/>
+<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<text x="-2.032" y="0" size="0.8128" layer="21" font="vector" ratio="20" align="center-left">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -4738,10 +4707,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </polygon>
 <pin name="-" x="-10.16" y="0" length="short"/>
 <pin name="+" x="10.16" y="0" length="short" rot="R180"/>
-<pin name="~2" x="0" y="-7.62" length="short" rot="R90"/>
+<pin name="~2" x="0" y="-7.62" length="short" swaplevel="1" rot="R90"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
-<pin name="~" x="0" y="7.62" length="short" rot="R270"/>
+<pin name="~" x="0" y="7.62" length="short" swaplevel="1" rot="R270"/>
 <wire x1="-3.81" y1="5.08" x2="3.81" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="94"/>
 </symbol>
@@ -4770,6 +4739,21 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5003,6 +4987,22 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <attribute name="MOUSER" value="80-C315C471J1G" constant="no"/>
 <attribute name="VALUE" value="470pf" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6043,10 +6043,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="0.6096" drill="0.3048">
+<class number="1" name="power" width="0.6096" drill="0.381">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="signal" width="0.254" drill="0.3048">
+<class number="2" name="signal" width="0.254" drill="0.381">
 <clearance class="2" value="0.254"/>
 </class>
 </classes>
@@ -6057,12 +6057,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C119" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
 <part name="J105" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="SUPPLY106" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R112" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R111" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R115" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R116" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R113" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="12k"/>
-<part name="R114" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
+<part name="R112" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R111" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R115" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R116" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R113" library="mixer" deviceset="RESISTOR" device="" value="12k"/>
+<part name="R114" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
 <part name="C117" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C118" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C115" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
@@ -6072,12 +6072,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D102" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="SUPPLY103" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY104" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R101" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
-<part name="R102" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
+<part name="R101" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
+<part name="R102" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
 <part name="C104" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C103" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R103" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
-<part name="R104" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
+<part name="R103" library="mixer" deviceset="RESISTOR" device="" value="10"/>
+<part name="R104" library="mixer" deviceset="RESISTOR" device="" value="10"/>
 <part name="C113" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C112" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="GND104" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6087,9 +6087,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C108" library="mixer" deviceset="CAP-LYTIC" device="47U/63V" value="47u/63V"/>
 <part name="C101" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
 <part name="J101" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="R108" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R109" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R107" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="22k"/>
+<part name="R108" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R109" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R107" library="mixer" deviceset="RESISTOR" device="" value="22k"/>
 <part name="GND101" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY101" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY102" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -6097,15 +6097,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C111" library="mixer" deviceset="CAP-LYTIC" device="6800U/10V" value="6800u/25V"/>
 <part name="J103" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="phantom"/>
 <part name="GND105" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R110" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="5"/>
+<part name="R110" library="mixer" deviceset="RESISTOR" device="" value="5"/>
 <part name="U101" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="C122" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="C121" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND109" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C106" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C105" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R105" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
-<part name="R106" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
+<part name="R105" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
+<part name="R106" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
 <part name="C109" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C110" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C102" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
@@ -6118,8 +6118,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME601" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="C602" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="GND601" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R605" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R606" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
+<part name="R605" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R606" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
 <part name="J601" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK_LONGPADS" value="out2"/>
 <part name="U601" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="SUPPLY601" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -6128,10 +6128,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C603" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND603" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C120" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
-<part name="R601" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R602" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R603" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R604" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
+<part name="R601" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R602" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R603" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R604" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
 <part name="U602" library="SparkFun-IC-Special-Function" deviceset="LM391" device="N" technology="5"/>
 <part name="D602" library="SparkFun-LED" deviceset="LED_BARGRAPH_10" device="RED" value="RED"/>
 <part name="FRAME201" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
@@ -6147,14 +6147,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY605" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND607" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY606" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R610" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
-<part name="R609" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
+<part name="R610" library="mixer" deviceset="RESISTOR" device="" value="???"/>
+<part name="R609" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="GND604" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C601" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
-<part name="R607" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100"/>
-<part name="R608" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="47k"/>
+<part name="R607" library="mixer" deviceset="RESISTOR" device="" value="100"/>
+<part name="R608" library="mixer" deviceset="RESISTOR" device="" value="47k"/>
 <part name="GND602" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R611" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
+<part name="R611" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="H612" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H611" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H609" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
@@ -6179,12 +6179,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C219" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
 <part name="J205" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="SUPPLY206" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R212" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R211" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R215" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R216" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R213" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="12k"/>
-<part name="R214" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
+<part name="R212" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R211" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R215" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R216" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R213" library="mixer" deviceset="RESISTOR" device="" value="12k"/>
+<part name="R214" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
 <part name="C217" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C218" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C215" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
@@ -6194,12 +6194,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D202" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="SUPPLY203" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY204" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R201" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
-<part name="R202" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
+<part name="R201" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
+<part name="R202" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
 <part name="C204" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C203" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R203" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
-<part name="R204" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
+<part name="R203" library="mixer" deviceset="RESISTOR" device="" value="10"/>
+<part name="R204" library="mixer" deviceset="RESISTOR" device="" value="10"/>
 <part name="C213" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C212" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="GND204" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6209,9 +6209,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C208" library="mixer" deviceset="CAP-LYTIC" device="47U/63V" value="47u/63V"/>
 <part name="C201" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
 <part name="J201" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="R208" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R209" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R207" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="22k"/>
+<part name="R208" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R209" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R207" library="mixer" deviceset="RESISTOR" device="" value="22k"/>
 <part name="GND201" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY201" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY202" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -6219,15 +6219,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C211" library="mixer" deviceset="CAP-LYTIC" device="6800U/10V" value="6800u/25V"/>
 <part name="J203" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="phantom"/>
 <part name="GND205" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R210" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="5"/>
+<part name="R210" library="mixer" deviceset="RESISTOR" device="" value="5"/>
 <part name="U201" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="C222" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="C221" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND209" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C206" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C205" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R205" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
-<part name="R206" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
+<part name="R205" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
+<part name="R206" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
 <part name="C209" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C210" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C202" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
@@ -6248,12 +6248,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C319" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
 <part name="J305" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="SUPPLY306" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R312" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R311" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R315" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R316" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R313" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="12k"/>
-<part name="R314" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
+<part name="R312" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R311" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R315" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R316" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R313" library="mixer" deviceset="RESISTOR" device="" value="12k"/>
+<part name="R314" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
 <part name="C317" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C318" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C315" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
@@ -6263,12 +6263,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D302" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="SUPPLY303" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY304" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R301" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
-<part name="R302" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
+<part name="R301" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
+<part name="R302" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
 <part name="C304" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C303" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R303" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
-<part name="R304" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
+<part name="R303" library="mixer" deviceset="RESISTOR" device="" value="10"/>
+<part name="R304" library="mixer" deviceset="RESISTOR" device="" value="10"/>
 <part name="C313" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C312" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="GND304" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6278,9 +6278,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C308" library="mixer" deviceset="CAP-LYTIC" device="47U/63V" value="47u/63V"/>
 <part name="C301" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
 <part name="J301" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="R308" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R309" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R307" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="22k"/>
+<part name="R308" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R309" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R307" library="mixer" deviceset="RESISTOR" device="" value="22k"/>
 <part name="GND301" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY301" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY302" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -6288,15 +6288,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C311" library="mixer" deviceset="CAP-LYTIC" device="6800U/10V" value="6800u/25V"/>
 <part name="J303" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="phantom"/>
 <part name="GND305" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R310" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="5"/>
+<part name="R310" library="mixer" deviceset="RESISTOR" device="" value="5"/>
 <part name="U301" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="C322" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="C321" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND309" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C306" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C305" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R305" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
-<part name="R306" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
+<part name="R305" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
+<part name="R306" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
 <part name="C309" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C310" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C302" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
@@ -6317,12 +6317,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C419" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
 <part name="J405" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="SUPPLY406" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R412" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R411" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k8"/>
-<part name="R415" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R416" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
-<part name="R413" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="12k"/>
-<part name="R414" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k"/>
+<part name="R412" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R411" library="mixer" deviceset="RESISTOR" device="" value="1k8"/>
+<part name="R415" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R416" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
+<part name="R413" library="mixer" deviceset="RESISTOR" device="" value="12k"/>
+<part name="R414" library="mixer" deviceset="RESISTOR" device="" value="1k"/>
 <part name="C417" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C418" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C415" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
@@ -6332,12 +6332,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D402" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="SUPPLY403" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY404" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
-<part name="R401" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
-<part name="R402" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="6k8"/>
+<part name="R401" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
+<part name="R402" library="mixer" deviceset="RESISTOR" device="" value="6k8"/>
 <part name="C404" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C403" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R403" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
-<part name="R404" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10"/>
+<part name="R403" library="mixer" deviceset="RESISTOR" device="" value="10"/>
+<part name="R404" library="mixer" deviceset="RESISTOR" device="" value="10"/>
 <part name="C413" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C412" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="GND404" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6347,9 +6347,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C408" library="mixer" deviceset="CAP-LYTIC" device="47U/63V" value="47u/63V"/>
 <part name="C401" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
 <part name="J401" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
-<part name="R408" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R409" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="1k2"/>
-<part name="R407" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="22k"/>
+<part name="R408" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R409" library="mixer" deviceset="RESISTOR" device="" value="1k2"/>
+<part name="R407" library="mixer" deviceset="RESISTOR" device="" value="22k"/>
 <part name="GND401" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY401" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY402" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -6357,15 +6357,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C411" library="mixer" deviceset="CAP-LYTIC" device="6800U/10V" value="6800u/25V"/>
 <part name="J403" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="phantom"/>
 <part name="GND405" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R410" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="5"/>
+<part name="R410" library="mixer" deviceset="RESISTOR" device="" value="5"/>
 <part name="U401" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="C422" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="C421" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND409" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C406" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
 <part name="C405" library="mixer" deviceset="CAP-CERAMIC" device="470PF" value="470pf"/>
-<part name="R405" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
-<part name="R406" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="4k99"/>
+<part name="R405" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
+<part name="R406" library="mixer" deviceset="RESISTOR" device="" value="4k99"/>
 <part name="C409" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C410" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="C402" library="mixer" deviceset="CAP-CERAMIC" device="47PF" value="47pf"/>
@@ -6382,8 +6382,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND408" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C502" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="GND501" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R505" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R506" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
+<part name="R505" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R506" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
 <part name="J501" library="SparkFun-Connectors" deviceset="CONN_02" device="LOCK_LONGPADS" value="out2"/>
 <part name="U501" library="mixer" deviceset="OPAMP" device="LME49710" value="lme49710"/>
 <part name="SUPPLY501" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -6391,10 +6391,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C504" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="C503" library="mixer" deviceset="WIMA-MKS2" device="0.01UF" value="0.01uf"/>
 <part name="GND503" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R501" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R502" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R503" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
-<part name="R504" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10k"/>
+<part name="R501" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R502" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R503" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
+<part name="R504" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
 <part name="U502" library="SparkFun-IC-Special-Function" deviceset="LM391" device="N" technology="5"/>
 <part name="D502" library="SparkFun-LED" deviceset="LED_BARGRAPH_10" device="RED" value="RED"/>
 <part name="FB501" library="mixer" deviceset="FB" device="" value="FB"/>
@@ -6406,14 +6406,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY505" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND507" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY506" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R510" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
-<part name="R509" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
+<part name="R510" library="mixer" deviceset="RESISTOR" device="" value="???"/>
+<part name="R509" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="GND504" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C501" library="mixer" deviceset="CAP-CERAMIC" device="100PF" value="100pf"/>
-<part name="R507" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="100"/>
-<part name="R508" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="47k"/>
+<part name="R507" library="mixer" deviceset="RESISTOR" device="" value="100"/>
+<part name="R508" library="mixer" deviceset="RESISTOR" device="" value="47k"/>
 <part name="GND502" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R511" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="???"/>
+<part name="R511" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="GND506" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND701" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C702" library="mixer" deviceset="CAP-LYTIC" device="1000U/35V" value="1000u/35V"/>
@@ -6508,7 +6508,7 @@ possibly can omit C118</text>
 <instance part="C102" gate="G$1" x="55.88" y="165.1" rot="R90"/>
 <instance part="J102" gate="J$1" x="30.48" y="165.1"/>
 <instance part="C114" gate="G$1" x="213.36" y="205.74" rot="R90"/>
-<instance part="D101" gate="G$1" x="119.38" y="238.76" rot="R90"/>
+<instance part="D101" gate="G$1" x="119.38" y="238.76" rot="MR90"/>
 <instance part="FRAME101" gate="G$1" x="0" y="0"/>
 <instance part="FRAME101" gate="G$2" x="330.2" y="0"/>
 <instance part="VR104" gate="G$1" x="355.6" y="114.3"/>
@@ -6618,7 +6618,7 @@ possibly can omit C118</text>
 <junction x="353.06" y="175.26"/>
 </segment>
 </net>
-<net name="N$9" class="2">
+<net name="PREOUT" class="2">
 <segment>
 <pinref part="R112" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="177.8" x2="251.46" y2="177.8" width="0.1524" layer="91"/>
@@ -6750,7 +6750,7 @@ possibly can omit C118</text>
 <pinref part="C114" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="N$23" class="2">
+<net name="M1GND" class="2">
 <segment>
 <pinref part="J101" gate="J$1" pin="2"/>
 <pinref part="C101" gate="G$1" pin="1"/>
@@ -6768,7 +6768,7 @@ possibly can omit C118</text>
 <junction x="68.58" y="205.74"/>
 </segment>
 </net>
-<net name="N$25" class="2">
+<net name="M1-" class="2">
 <segment>
 <pinref part="J101" gate="J$1" pin="3"/>
 <wire x1="38.1" y1="208.28" x2="40.64" y2="208.28" width="0.1524" layer="91"/>
@@ -6785,7 +6785,7 @@ possibly can omit C118</text>
 <wire x1="78.74" y1="218.44" x2="88.9" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="2">
+<net name="M1+" class="2">
 <segment>
 <pinref part="J101" gate="J$1" pin="1"/>
 <wire x1="38.1" y1="203.2" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
@@ -6900,7 +6900,7 @@ possibly can omit C118</text>
 <wire x1="162.56" y1="190.5" x2="162.56" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$36" class="2">
+<net name="L1GND" class="2">
 <segment>
 <pinref part="J102" gate="J$1" pin="2"/>
 <pinref part="C102" gate="G$1" pin="1"/>
@@ -6918,7 +6918,7 @@ possibly can omit C118</text>
 <junction x="68.58" y="165.1"/>
 </segment>
 </net>
-<net name="N$38" class="2">
+<net name="L1-" class="2">
 <segment>
 <pinref part="J102" gate="J$1" pin="3"/>
 <wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
@@ -6931,7 +6931,7 @@ possibly can omit C118</text>
 <wire x1="68.58" y1="177.8" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$39" class="2">
+<net name="L1+" class="2">
 <segment>
 <pinref part="J102" gate="J$1" pin="1"/>
 <wire x1="38.1" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
@@ -6984,7 +6984,7 @@ possibly can omit C118</text>
 <wire x1="109.22" y1="177.8" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="177.8" x2="114.3" y2="218.44" width="0.1524" layer="91"/>
 <junction x="114.3" y="218.44"/>
-<pinref part="D101" gate="G$1" pin="~"/>
+<pinref part="D101" gate="G$1" pin="~2"/>
 </segment>
 </net>
 <net name="N$31" class="2">
@@ -7012,7 +7012,7 @@ possibly can omit C118</text>
 <wire x1="172.72" y1="200.66" x2="175.26" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="190.5" width="0.1524" layer="91"/>
 <junction x="121.92" y="190.5"/>
-<pinref part="D101" gate="G$1" pin="~2"/>
+<pinref part="D101" gate="G$1" pin="~"/>
 </segment>
 </net>
 <net name="N$6" class="2">
@@ -7133,7 +7133,7 @@ possibly can omit C118</text>
 <instance part="C202" gate="G$1" x="53.34" y="167.64" rot="R90"/>
 <instance part="J202" gate="J$1" x="27.94" y="167.64"/>
 <instance part="C214" gate="G$1" x="210.82" y="208.28" rot="R90"/>
-<instance part="D201" gate="G$1" x="116.84" y="241.3" rot="R90"/>
+<instance part="D201" gate="G$1" x="116.84" y="241.3" rot="MR90"/>
 <instance part="VR204" gate="G$1" x="353.06" y="116.84"/>
 <instance part="VR205" gate="G$1" x="386.08" y="116.84"/>
 <instance part="C220" gate="G$1" x="337.82" y="177.8" rot="R90"/>
@@ -7229,7 +7229,7 @@ possibly can omit C118</text>
 <pinref part="GND208" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="EQ1OUT1" class="0">
+<net name="EQ2OUT" class="0">
 <segment>
 <pinref part="J205" gate="G$1" pin="1"/>
 <wire x1="350.52" y1="177.8" x2="363.22" y2="177.8" width="0.1524" layer="91"/>
@@ -7607,7 +7607,7 @@ possibly can omit C118</text>
 <wire x1="106.68" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="180.34" x2="111.76" y2="220.98" width="0.1524" layer="91"/>
 <junction x="111.76" y="220.98"/>
-<pinref part="D201" gate="G$1" pin="~"/>
+<pinref part="D201" gate="G$1" pin="~2"/>
 </segment>
 </net>
 <net name="N$83" class="0">
@@ -7635,7 +7635,7 @@ possibly can omit C118</text>
 <wire x1="170.18" y1="203.2" x2="172.72" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="154.94" x2="119.38" y2="193.04" width="0.1524" layer="91"/>
 <junction x="119.38" y="193.04"/>
-<pinref part="D201" gate="G$1" pin="~2"/>
+<pinref part="D201" gate="G$1" pin="~"/>
 </segment>
 </net>
 <net name="N$84" class="0">
@@ -7756,7 +7756,7 @@ possibly can omit C118</text>
 <instance part="C302" gate="G$1" x="53.34" y="162.56" rot="R90"/>
 <instance part="J302" gate="J$1" x="27.94" y="162.56"/>
 <instance part="C314" gate="G$1" x="210.82" y="203.2" rot="R90"/>
-<instance part="D301" gate="G$1" x="116.84" y="236.22" rot="R90"/>
+<instance part="D301" gate="G$1" x="116.84" y="236.22" rot="MR90"/>
 <instance part="VR304" gate="G$1" x="353.06" y="111.76"/>
 <instance part="VR305" gate="G$1" x="386.08" y="111.76"/>
 <instance part="C320" gate="G$1" x="337.82" y="172.72" rot="R90"/>
@@ -7852,7 +7852,7 @@ possibly can omit C118</text>
 <pinref part="GND308" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="EQ1OUT2" class="0">
+<net name="EQ3OUT" class="0">
 <segment>
 <pinref part="J305" gate="G$1" pin="1"/>
 <wire x1="350.52" y1="172.72" x2="363.22" y2="172.72" width="0.1524" layer="91"/>
@@ -8230,7 +8230,7 @@ possibly can omit C118</text>
 <wire x1="106.68" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="175.26" x2="111.76" y2="215.9" width="0.1524" layer="91"/>
 <junction x="111.76" y="215.9"/>
-<pinref part="D301" gate="G$1" pin="~"/>
+<pinref part="D301" gate="G$1" pin="~2"/>
 </segment>
 </net>
 <net name="N$115" class="0">
@@ -8258,7 +8258,7 @@ possibly can omit C118</text>
 <wire x1="170.18" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="149.86" x2="119.38" y2="187.96" width="0.1524" layer="91"/>
 <junction x="119.38" y="187.96"/>
-<pinref part="D301" gate="G$1" pin="~2"/>
+<pinref part="D301" gate="G$1" pin="~"/>
 </segment>
 </net>
 <net name="N$116" class="0">
@@ -8379,7 +8379,7 @@ possibly can omit C118</text>
 <instance part="C402" gate="G$1" x="53.34" y="160.02" rot="R90"/>
 <instance part="J402" gate="J$1" x="27.94" y="160.02"/>
 <instance part="C414" gate="G$1" x="210.82" y="200.66" rot="R90"/>
-<instance part="D401" gate="G$1" x="116.84" y="233.68" rot="R90"/>
+<instance part="D401" gate="G$1" x="116.84" y="233.68" rot="MR90"/>
 <instance part="VR404" gate="G$1" x="353.06" y="109.22"/>
 <instance part="VR405" gate="G$1" x="386.08" y="109.22"/>
 <instance part="C420" gate="G$1" x="337.82" y="170.18" rot="R90"/>
@@ -8475,7 +8475,7 @@ possibly can omit C118</text>
 <pinref part="GND408" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="EQ1OUT3" class="0">
+<net name="EQ4OUT" class="0">
 <segment>
 <pinref part="J405" gate="G$1" pin="1"/>
 <wire x1="350.52" y1="170.18" x2="363.22" y2="170.18" width="0.1524" layer="91"/>
@@ -8853,7 +8853,7 @@ possibly can omit C118</text>
 <wire x1="106.68" y1="172.72" x2="111.76" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="172.72" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
 <junction x="111.76" y="213.36"/>
-<pinref part="D401" gate="G$1" pin="~"/>
+<pinref part="D401" gate="G$1" pin="~2"/>
 </segment>
 </net>
 <net name="N$147" class="0">
@@ -8881,7 +8881,7 @@ possibly can omit C118</text>
 <wire x1="170.18" y1="195.58" x2="172.72" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="147.32" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 <junction x="119.38" y="185.42"/>
-<pinref part="D401" gate="G$1" pin="~2"/>
+<pinref part="D401" gate="G$1" pin="~"/>
 </segment>
 </net>
 <net name="N$148" class="0">
@@ -9878,7 +9878,7 @@ plus clamp &amp; fb from THAT 1646 datasheet</text>
 <junction x="71.12" y="99.06"/>
 </segment>
 </net>
-<net name="N$166" class="0">
+<net name="N$166" class="1">
 <segment>
 <pinref part="J701" gate="J$1" pin="1"/>
 <wire x1="48.26" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
@@ -9887,7 +9887,7 @@ plus clamp &amp; fb from THAT 1646 datasheet</text>
 <wire x1="53.34" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$167" class="0">
+<net name="N$167" class="1">
 <segment>
 <pinref part="J701" gate="J$1" pin="3"/>
 <wire x1="48.26" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
