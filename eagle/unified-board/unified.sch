@@ -3927,91 +3927,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="mosfet">
-<packages>
-<package name="DIP08-KIT">
-<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
-<circle x="-3.81" y="-1.905" radius="0.508" width="0.254" layer="21"/>
-<pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="4" x="3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="5" x="3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="6" x="1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="7" x="-1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<pad name="8" x="-3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<text x="-5.715" y="-3.81" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<circle x="-3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
-<circle x="-3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<circle x="-3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
-<text x="-3.175" y="-0.635" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">&gt;VALUE</text>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.016" x2="-5.08" y2="1.016" width="0.2032" layer="21" curve="180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="THAT-151X">
-<pin name="+IN" x="0" y="2.54" length="short"/>
-<pin name="RG2" x="0" y="5.08" length="short"/>
-<pin name="RG1" x="0" y="10.16" length="short"/>
-<pin name="-IN" x="0" y="12.7" length="short"/>
-<pin name="V+" x="15.24" y="17.78" length="short" rot="R270"/>
-<pin name="V-" x="15.24" y="-2.54" length="short" rot="R90"/>
-<pin name="OUT" x="22.86" y="7.62" length="short" rot="R180"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="20.32" y2="7.62" width="0.254" layer="94"/>
-<wire x1="20.32" y1="7.62" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="2.54" y="15.494" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.842" y="6.858" size="1.27" layer="95">&gt;VALUE</text>
-<pin name="REF" x="10.16" y="-2.54" length="short" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="THAT151X" prefix="IC">
-<gates>
-<gate name="G$1" symbol="THAT-151X" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIP08-KIT">
-<connects>
-<connect gate="G$1" pin="+IN" pad="3"/>
-<connect gate="G$1" pin="-IN" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="6"/>
-<connect gate="G$1" pin="REF" pad="5"/>
-<connect gate="G$1" pin="RG1" pad="1"/>
-<connect gate="G$1" pin="RG2" pad="8"/>
-<connect gate="G$1" pin="V+" pad="7"/>
-<connect gate="G$1" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="THAT151x" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-DiscreteSemi">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find discrete semiconductors- transistors, diodes, TRIACs, optoisolators, etc.&lt;br&gt;&lt;br&gt;
@@ -4573,6 +4488,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="THAT-151X">
+<pin name="+IN" x="0" y="2.54" length="short"/>
+<pin name="RG2" x="0" y="5.08" length="short"/>
+<pin name="RG1" x="0" y="10.16" length="short"/>
+<pin name="-IN" x="0" y="12.7" length="short"/>
+<pin name="V+" x="15.24" y="17.78" length="short" rot="R270"/>
+<pin name="V-" x="15.24" y="-2.54" length="short" rot="R90"/>
+<pin name="OUT" x="22.86" y="7.62" length="short" rot="R180"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="2.54" y="15.494" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="3.302" y="6.858" size="1.27" layer="95" font="vector">&gt;VALUE</text>
+<pin name="REF" x="10.16" y="-2.54" length="short" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="POT" prefix="VR" uservalue="yes">
@@ -4884,6 +4816,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="IC-09172" constant="no"/>
 <attribute name="VALUE" value="LM358" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="THAT151X" prefix="IC">
+<gates>
+<gate name="G$1" symbol="THAT-151X" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP08-KIT">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="REF" pad="5"/>
+<connect gate="G$1" pin="RG1" pad="1"/>
+<connect gate="G$1" pin="RG2" pad="8"/>
+<connect gate="G$1" pin="V+" pad="7"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUSER" value="887-1512P08-U " constant="no"/>
+<attribute name="VALUE" value="THAT1512" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5949,7 +5906,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C118" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C115" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
 <part name="C116" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
-<part name="IC101" library="mosfet" deviceset="THAT151X" device="" value="THAT151x"/>
+<part name="IC101" library="mixer" deviceset="THAT151X" device="" value="THAT1512"/>
 <part name="D103" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="D102" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="SUPPLY103" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -6071,7 +6028,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C218" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C215" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
 <part name="C216" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
-<part name="IC201" library="mosfet" deviceset="THAT151X" device="" value="THAT151x"/>
+<part name="IC201" library="mixer" deviceset="THAT151X" device="" value="THAT1512"/>
 <part name="D203" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="D202" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="SUPPLY203" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -6140,7 +6097,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C318" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C315" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
 <part name="C316" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
-<part name="IC301" library="mosfet" deviceset="THAT151X" device="" value="THAT151x"/>
+<part name="IC301" library="mixer" deviceset="THAT151X" device="" value="THAT1512"/>
 <part name="D303" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="D302" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="SUPPLY303" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -6209,7 +6166,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C418" library="mixer" deviceset="WIMA-MKS2" device="0.015UF" value="0.015uf"/>
 <part name="C415" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
 <part name="C416" library="mixer" deviceset="WIMA-MKS2" device="0.1UF" value="0.1uf"/>
-<part name="IC401" library="mosfet" deviceset="THAT151X" device="" value="THAT151x"/>
+<part name="IC401" library="mixer" deviceset="THAT151X" device="" value="THAT1512"/>
 <part name="D403" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="D402" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-1N4148" value="200mA/100V/1V"/>
 <part name="SUPPLY403" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
