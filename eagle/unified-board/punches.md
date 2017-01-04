@@ -14,10 +14,16 @@
 
 # Off board parts, don't forget 'em
 
+* Mix send pots
+  * 31vj401-f3
 * IEC plug/switch/fuseholder
+ * Epcos/tdk: B84776
 * fuse?
 * input jacks
+  * NCJ6FI-S
 * output jacks
+  * NC3MD-lx
+  * NYS-230
 * knobs
 * transformers
 * foh kill
