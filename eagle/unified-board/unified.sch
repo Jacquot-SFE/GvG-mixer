@@ -6260,8 +6260,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY702" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
 <part name="SUPPLY701" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="J701" library="SparkFun-Connectors" deviceset="CONN_03" device="POLAR_LOCK" value="power"/>
-<part name="R701" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10r"/>
-<part name="R702" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10r"/>
+<part name="R701" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10"/>
+<part name="R702" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10"/>
 <part name="GND702" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R703" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="1k5"/>
 <part name="D701" library="SparkFun-LED" deviceset="LED" device="5MM"/>

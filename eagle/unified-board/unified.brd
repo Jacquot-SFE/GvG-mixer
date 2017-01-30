@@ -28,10 +28,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -296,8 +296,12 @@
 <dimension x1="203.2" y1="101.6" x2="203.2" y2="-38.1" x3="229.87" y3="31.75" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="181.61" y1="71.12" x2="241.3" y2="87.63" x3="252.73" y3="87.63" textsize="1.778" textratio="15" layer="47" dtype="leader" unit="inch"/>
 <dimension x1="181.61" y1="38.1" x2="243.84" y2="62.23" x3="252.73" y3="62.23" textsize="1.778" textratio="15" layer="47" dtype="leader" unit="inch"/>
-<text x="252.73" y="87.63" size="1.778" layer="47" font="vector" ratio="15">4x 10mm??</text>
-<text x="252.73" y="62.23" size="1.778" layer="47" font="vector" ratio="15">16x ??</text>
+<text x="252.73" y="87.63" size="1.778" layer="47" font="vector" ratio="15">4x 9mm</text>
+<text x="252.73" y="62.23" size="1.778" layer="47" font="vector" ratio="15">16x 8mm</text>
+<dimension x1="0" y1="101.6" x2="0" y2="92.71" x3="-7.62" y3="97.155" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="101.6" x2="0" y2="67.31" x3="-11.43" y3="84.455" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="12.7" y1="45.72" x2="0" y2="45.72" x3="6.35" y3="105.41" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="12.7" y1="45.72" x2="12.7" y2="101.6" x3="-16.51" y3="73.66" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Resistors">
@@ -1687,8 +1691,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="CONN-08625" x="31.75" y="53.34" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="SF_ID" value="PRT-08096" x="31.75" y="53.34" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="R701" library="SparkFun-Resistors" package="AXIAL-0.3" value="10r" x="6.35" y="62.23" rot="R180"/>
-<element name="R702" library="SparkFun-Resistors" package="AXIAL-0.3" value="10r" x="6.35" y="49.53" rot="R180"/>
+<element name="R701" library="SparkFun-Resistors" package="AXIAL-0.3" value="10" x="6.35" y="62.23" rot="R180"/>
+<element name="R702" library="SparkFun-Resistors" package="AXIAL-0.3" value="10" x="6.35" y="49.53" rot="R180"/>
 <element name="R703" library="SparkFun-Resistors" package="AXIAL-0.3" value="1k5" x="12.7" y="57.15" rot="R270"/>
 <element name="D701" library="SparkFun-LED" package="LED_5MM" value="" x="12.7" y="45.72" rot="MR270"/>
 <element name="FRAME701" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="81.28" y="-71.12"/>
