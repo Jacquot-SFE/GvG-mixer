@@ -4178,44 +4178,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 <package name="SM-RECTIFIER">
 <circle x="0" y="0" radius="4.572" width="0.254" layer="21"/>
-<pad name="POS" x="0" y="-2.794" drill="1.016" shape="square"/>
-<pad name="AC1" x="-2.794" y="0" drill="1.016"/>
-<pad name="AC2" x="2.794" y="0" drill="1.016"/>
-<pad name="NEG" x="0" y="2.794" drill="1.016"/>
-<wire x1="0" y1="-4.445" x2="0" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-4.445" x2="0" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="0" y1="-4.445" x2="-0.635" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-4.445" width="0.127" layer="21"/>
-<wire x1="0" y1="3.81" x2="0" y2="4.445" width="0.127" layer="21"/>
-<text x="-2.54" y="-0.635" size="1.27" layer="21" font="vector" rot="R90">~</text>
-<text x="5.08" y="-0.635" size="1.27" layer="21" font="vector" rot="R90">~</text>
+<pad name="POS" x="0" y="-3.937" drill="1.016" shape="square"/>
+<pad name="AC1" x="-3.937" y="0" drill="1.016"/>
+<pad name="AC2" x="3.937" y="0" drill="1.016"/>
+<pad name="NEG" x="0" y="3.937" drill="1.016"/>
+<wire x1="1.5" y1="-2.945" x2="1.5" y2="-2.31" width="0.127" layer="21"/>
+<wire x1="2.135" y1="-2.945" x2="1.5" y2="-2.945" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.945" x2="0.865" y2="-2.945" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-3.58" x2="1.5" y2="-2.945" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="3.302" x2="-1.016" y2="3.937" width="0.127" layer="21"/>
+<text x="-1.778" y="-1.143" size="1.27" layer="21" font="vector" rot="R90">~</text>
+<text x="4.064" y="0.127" size="1.27" layer="21" font="vector" rot="R90">~</text>
 <text x="-2.54" y="0.635" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="BEAD">
-<wire x1="-2.25" y1="1.75" x2="2.25" y2="1.75" width="0.127" layer="21"/>
-<wire x1="-2.25" y1="-1.75" x2="2.25" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="2.25" y1="1.75" x2="2.25" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-2.25" y1="1.75" x2="-2.25" y2="-1.75" width="0.127" layer="21"/>
-<pad name="P$1" x="3" y="0" drill="1.016"/>
-<pad name="P$2" x="-3" y="0" drill="1.016"/>
+<wire x1="-4.5" y1="1.75" x2="4.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.75" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.75" x2="-4.5" y2="-1.75" width="0.127" layer="21"/>
+<pad name="P$1" x="5.5" y="0" drill="1.016"/>
+<pad name="P$2" x="-5.5" y="0" drill="1.016"/>
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-2" y="-1" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="CAP-PANA-5LS-6DIAM">
+<package name="CAP-PANA-2LS-6DIAM">
 <circle x="0" y="0" radius="3.15" width="0.254" layer="21"/>
-<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
-<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<pad name="POS" x="-1" y="0" drill="0.8" shape="square"/>
+<pad name="NEG" x="1" y="0" drill="0.8"/>
 <wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
 <text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="0.5" y="-3" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 <text x="0.5" y="-3" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
 </package>
-<package name="CAP-PANA-5LS-5DIAM">
+<package name="CAP-PANA-2LS-5DIAM">
 <circle x="0" y="0" radius="3.15" width="0.254" layer="21"/>
-<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
-<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<pad name="POS" x="-1" y="0" drill="0.8" shape="square"/>
+<pad name="NEG" x="1" y="0" drill="0.8"/>
 <wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
 <text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
@@ -4224,8 +4224,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 <package name="CAP-PANA-5LS-12.5DIAM">
 <circle x="0" y="0" radius="6.25" width="0.254" layer="21"/>
-<pad name="POS" x="-2.5" y="0" drill="0.8" shape="square"/>
-<pad name="NEG" x="2.5" y="0" drill="0.8"/>
+<pad name="POS" x="-2.5" y="0" drill="1.016" shape="square"/>
+<pad name="NEG" x="2.5" y="0" drill="1.016"/>
 <wire x1="-2" y1="-0.7" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-2.3" y1="-1" x2="-1.7" y2="-1" width="0.127" layer="21"/>
 <text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
@@ -4648,7 +4648,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="47U/63V" package="CAP-PANA-5LS-6DIAM">
+<device name="47U/63V" package="CAP-PANA-2LS-6DIAM">
 <connects>
 <connect gate="G$1" pin="+" pad="POS"/>
 <connect gate="G$1" pin="-" pad="NEG"/>
@@ -4660,7 +4660,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="47U/25V" package="CAP-PANA-5LS-5DIAM">
+<device name="47U/25V" package="CAP-PANA-2LS-5DIAM">
 <connects>
 <connect gate="G$1" pin="+" pad="POS"/>
 <connect gate="G$1" pin="-" pad="NEG"/>
@@ -5996,12 +5996,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R611" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="H612" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H611" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H609" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H610" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H608" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H607" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H605" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H606" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H604" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H603" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H601" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
@@ -9355,12 +9350,7 @@ plus clamp &amp; fb from THAT 1646 datasheet</text>
 <instance part="R611" gate="G$1" x="325.12" y="185.42" rot="R180"/>
 <instance part="H612" gate="G$1" x="429.26" y="38.1"/>
 <instance part="H611" gate="G$1" x="429.26" y="40.64"/>
-<instance part="H609" gate="G$1" x="426.72" y="40.64"/>
-<instance part="H610" gate="G$1" x="426.72" y="38.1"/>
-<instance part="H608" gate="G$1" x="424.18" y="38.1"/>
-<instance part="H607" gate="G$1" x="424.18" y="40.64"/>
 <instance part="H605" gate="G$1" x="421.64" y="40.64"/>
-<instance part="H606" gate="G$1" x="421.64" y="38.1"/>
 <instance part="H604" gate="G$1" x="419.1" y="38.1"/>
 <instance part="H603" gate="G$1" x="419.1" y="40.64"/>
 <instance part="H601" gate="G$1" x="416.56" y="40.64"/>
