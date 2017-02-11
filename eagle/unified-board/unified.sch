@@ -5995,9 +5995,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND602" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R611" library="mixer" deviceset="RESISTOR" device="" value="???"/>
 <part name="H612" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H611" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H605" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
-<part name="H604" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H603" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H601" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H602" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
@@ -9349,9 +9347,7 @@ plus clamp &amp; fb from THAT 1646 datasheet</text>
 <instance part="GND602" gate="1" x="152.4" y="68.58"/>
 <instance part="R611" gate="G$1" x="325.12" y="185.42" rot="R180"/>
 <instance part="H612" gate="G$1" x="429.26" y="38.1"/>
-<instance part="H611" gate="G$1" x="429.26" y="40.64"/>
 <instance part="H605" gate="G$1" x="421.64" y="40.64"/>
-<instance part="H604" gate="G$1" x="419.1" y="38.1"/>
 <instance part="H603" gate="G$1" x="419.1" y="40.64"/>
 <instance part="H601" gate="G$1" x="416.56" y="40.64"/>
 <instance part="H602" gate="G$1" x="416.56" y="38.1"/>
