@@ -5952,8 +5952,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C114" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="D101" library="mixer" deviceset="RECTIFIER" device="RB15X"/>
 <part name="FRAME101" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="VR104" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
-<part name="VR105" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="FRAME601" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="C602" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="GND601" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -6003,8 +6001,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J106" library="SparkFun-Connectors" deviceset="CONN_05" device="PTH_LONGPADS"/>
 <part name="GND107" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND606" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND106" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND108" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY205" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="VR203" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="VR202" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
@@ -6066,14 +6062,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J202" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="C214" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="D201" library="mixer" deviceset="RECTIFIER" device="RB15X"/>
-<part name="VR204" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
-<part name="VR205" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="C220" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="J204" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="J206" library="SparkFun-Connectors" deviceset="CONN_05" device="PTH_LONGPADS"/>
 <part name="GND207" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND206" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND208" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY305" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="VR303" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="VR302" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
@@ -6135,14 +6127,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J302" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="C314" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="D301" library="mixer" deviceset="RECTIFIER" device="RB15X"/>
-<part name="VR304" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
-<part name="VR305" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="C320" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="J304" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="J306" library="SparkFun-Connectors" deviceset="CONN_05" device="PTH_LONGPADS"/>
 <part name="GND307" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND306" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND308" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY405" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="VR403" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="VR402" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
@@ -6204,14 +6192,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J402" library="SparkFun-Connectors" deviceset="M03" device="1X03_NO_SILK"/>
 <part name="C414" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="D401" library="mixer" deviceset="RECTIFIER" device="RB15X"/>
-<part name="VR404" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
-<part name="VR405" library="mixer" deviceset="POT" device="10K-VERTPIN" value="10K"/>
 <part name="C420" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="J404" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT" value="eqout"/>
 <part name="J406" library="SparkFun-Connectors" deviceset="CONN_05" device="PTH_LONGPADS"/>
 <part name="GND407" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND406" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND408" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C502" library="mixer" deviceset="CAP-LYTIC" device="47U/25V" value="47u/25V"/>
 <part name="GND501" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R505" library="mixer" deviceset="RESISTOR" device="" value="10k"/>
@@ -6367,14 +6351,10 @@ possibly can omit C118</text>
 <instance part="D101" gate="G$1" x="119.38" y="238.76" rot="MR90"/>
 <instance part="FRAME101" gate="G$1" x="0" y="0"/>
 <instance part="FRAME101" gate="G$2" x="330.2" y="0"/>
-<instance part="VR104" gate="G$1" x="355.6" y="114.3"/>
-<instance part="VR105" gate="G$1" x="388.62" y="114.3"/>
 <instance part="C120" gate="G$1" x="340.36" y="175.26" rot="R90"/>
 <instance part="J104" gate="G$1" x="236.22" y="205.74" rot="R180"/>
 <instance part="J106" gate="G$1" x="373.38" y="152.4" rot="R180"/>
 <instance part="GND107" gate="1" x="363.22" y="142.24"/>
-<instance part="GND106" gate="1" x="355.6" y="104.14"/>
-<instance part="GND108" gate="1" x="388.62" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -6452,14 +6432,6 @@ possibly can omit C118</text>
 <pinref part="J106" gate="G$1" pin="5"/>
 <wire x1="365.76" y1="147.32" x2="363.22" y2="147.32" width="0.1524" layer="91"/>
 <junction x="363.22" y="147.32"/>
-</segment>
-<segment>
-<pinref part="VR104" gate="G$1" pin="A"/>
-<pinref part="GND106" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="VR105" gate="G$1" pin="A"/>
-<pinref part="GND108" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EQ1OUT" class="2">
@@ -6990,14 +6962,10 @@ possibly can omit C118</text>
 <instance part="J202" gate="J$1" x="27.94" y="167.64"/>
 <instance part="C214" gate="G$1" x="210.82" y="208.28" rot="R90"/>
 <instance part="D201" gate="G$1" x="116.84" y="241.3" rot="MR90"/>
-<instance part="VR204" gate="G$1" x="353.06" y="116.84"/>
-<instance part="VR205" gate="G$1" x="386.08" y="116.84"/>
 <instance part="C220" gate="G$1" x="337.82" y="177.8" rot="R90"/>
 <instance part="J204" gate="G$1" x="233.68" y="208.28" rot="R180"/>
 <instance part="J206" gate="G$1" x="370.84" y="154.94" rot="R180"/>
 <instance part="GND207" gate="1" x="360.68" y="144.78"/>
-<instance part="GND206" gate="1" x="353.06" y="106.68"/>
-<instance part="GND208" gate="1" x="386.08" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -7075,14 +7043,6 @@ possibly can omit C118</text>
 <pinref part="J206" gate="G$1" pin="5"/>
 <wire x1="363.22" y1="149.86" x2="360.68" y2="149.86" width="0.1524" layer="91"/>
 <junction x="360.68" y="149.86"/>
-</segment>
-<segment>
-<pinref part="VR204" gate="G$1" pin="A"/>
-<pinref part="GND206" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="VR205" gate="G$1" pin="A"/>
-<pinref part="GND208" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EQ2OUT" class="0">
@@ -7613,14 +7573,10 @@ possibly can omit C118</text>
 <instance part="J302" gate="J$1" x="27.94" y="162.56"/>
 <instance part="C314" gate="G$1" x="210.82" y="203.2" rot="R90"/>
 <instance part="D301" gate="G$1" x="116.84" y="236.22" rot="MR90"/>
-<instance part="VR304" gate="G$1" x="353.06" y="111.76"/>
-<instance part="VR305" gate="G$1" x="386.08" y="111.76"/>
 <instance part="C320" gate="G$1" x="337.82" y="172.72" rot="R90"/>
 <instance part="J304" gate="G$1" x="233.68" y="203.2" rot="R180"/>
 <instance part="J306" gate="G$1" x="370.84" y="149.86" rot="R180"/>
 <instance part="GND307" gate="1" x="360.68" y="139.7"/>
-<instance part="GND306" gate="1" x="353.06" y="101.6"/>
-<instance part="GND308" gate="1" x="386.08" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -7698,14 +7654,6 @@ possibly can omit C118</text>
 <pinref part="J306" gate="G$1" pin="5"/>
 <wire x1="363.22" y1="144.78" x2="360.68" y2="144.78" width="0.1524" layer="91"/>
 <junction x="360.68" y="144.78"/>
-</segment>
-<segment>
-<pinref part="VR304" gate="G$1" pin="A"/>
-<pinref part="GND306" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="VR305" gate="G$1" pin="A"/>
-<pinref part="GND308" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EQ3OUT" class="0">
@@ -8236,14 +8184,10 @@ possibly can omit C118</text>
 <instance part="J402" gate="J$1" x="27.94" y="160.02"/>
 <instance part="C414" gate="G$1" x="210.82" y="200.66" rot="R90"/>
 <instance part="D401" gate="G$1" x="116.84" y="233.68" rot="MR90"/>
-<instance part="VR404" gate="G$1" x="353.06" y="109.22"/>
-<instance part="VR405" gate="G$1" x="386.08" y="109.22"/>
 <instance part="C420" gate="G$1" x="337.82" y="170.18" rot="R90"/>
 <instance part="J404" gate="G$1" x="233.68" y="200.66" rot="R180"/>
 <instance part="J406" gate="G$1" x="370.84" y="147.32" rot="R180"/>
 <instance part="GND407" gate="1" x="360.68" y="137.16"/>
-<instance part="GND406" gate="1" x="353.06" y="99.06"/>
-<instance part="GND408" gate="1" x="386.08" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -8321,14 +8265,6 @@ possibly can omit C118</text>
 <pinref part="J406" gate="G$1" pin="5"/>
 <wire x1="363.22" y1="142.24" x2="360.68" y2="142.24" width="0.1524" layer="91"/>
 <junction x="360.68" y="142.24"/>
-</segment>
-<segment>
-<pinref part="VR404" gate="G$1" pin="A"/>
-<pinref part="GND406" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="VR405" gate="G$1" pin="A"/>
-<pinref part="GND408" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="EQ4OUT" class="0">
